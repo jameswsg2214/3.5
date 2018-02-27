@@ -2,30 +2,28 @@
 #include <string>
 #include <bits/stdc++.h>
 using namespace std;
-class sample{
-    public:
-    int i,cout=0;
-    int get()
-{
-            cin>>i;
-    }
+class Sample{
+    public: int i;
     int calc()
     {
+        cin>>i;
+        
 if(i<=60)
 {
     cout<<i;
 }
 else
 {
-    cout<<(i/60)<<(i%60);
+    int hr=i/60;
+    int min=i%60;
+    cout<<hr<<"hours" <<min<<"min";
 }
 return 0;    
-    }
+}
 };
 int main()
 {
-sample s;
-s.get();
+Sample s;
 s.calc();
 return 0;
 }
