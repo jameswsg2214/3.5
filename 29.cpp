@@ -10,7 +10,7 @@ class Sample{
         
 if(i<=60)
 {
-    cout<<i;
+     cout<<"0 hours"<<i<<"min";
 }
 else
 {
